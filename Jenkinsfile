@@ -1,10 +1,17 @@
 pipeline {
+    agent {
+        label ""
+    }
     stages {
         stage("build"){
-            echo "building"
+            steps{
+                echo "building"
+            }
         }
         stage("deploy"){
-            echo "deploying"
+            steps{
+                echo "deploying"
+            }
         }
     }
 }
