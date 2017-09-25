@@ -1,3 +1,10 @@
-node {
-    echo 'Hello World'
+pipeline {
+    stages {
+        stage("build"){
+            echo "building"
+        }
+        stage("deploy"){
+            echo "deploying"
+        }
+    }
 }
